@@ -1,0 +1,16 @@
+@use '../../assets/styles/color.scss' as colors;
+.top-strip {
+    height: 36px;
+    padding: 0;
+    margin: 0;
+    background-color:colors.$bg-blue;
+    .top-strip-content {
+        text-align: center;
+        align-items: center;
+        color: #fff;
+        padding: 8px 0px;
+        font-size: 14px;
+        font-family:  "Outfit", sans-serif;
+        font-weight: 500;
+    }
+}
