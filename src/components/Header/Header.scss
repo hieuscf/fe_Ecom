@@ -1,0 +1,152 @@
+.header {
+  width: 100%;
+
+  .header-container {
+    margin: 0 auto; // Căn giữa container
+    padding: 15px 20px; // Khoảng cách padding
+    display: flex; // Sử dụng flexbox để căn chỉnh
+    //content: space-between; // Chia đều các phần tử
+    align-items: center; // Căn giữa theo chiều dọc
+    justify-content: space-between;
+    max-width: 95%;
+
+    .header-logo {
+      margin: 15px 50px;
+      img {
+        width: 120px; // Kích thước logo
+        height: auto;
+      }
+    }
+
+    .header-location {
+      color: #333; // Màu chữ
+      font-size: 14px; // Kích thước chữ
+    }
+  }
+  form {
+    width: 40%;
+    position: relative;
+    height: 40px;
+    margin-top: 15px;
+    margin: auto;
+    .search-input {
+      ::-webkit-input-placeholder{color:rgba(0, 0, 0, 0.6)};
+    }
+    .form-control {
+      width: 100%;
+      padding-right: 2.5rem;
+      border-color: rgba(0, 0, 0, 0.2) !important;
+      border-radius: 10px;
+      padding: 0.5rem;
+
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+
+    .btn-light {
+      position: absolute;
+      right: 0.2rem;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: #fff;
+      border-color: rgba(0, 0, 0, 0.2) !important;
+      border-radius: 0px 10px 10px 0px;
+      padding: 0.5rem;
+      width: 50px;
+
+      svg {
+        color: #74c0fc;
+      }
+
+      &:hover {
+        background-color: #e0e0e0;
+      }
+    }
+  }
+
+  .right-action {
+    display: flex; /* Hiển thị theo hàng ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    gap: 20px; /* Khoảng cách giữa các thành phần */
+    margin-right: 30px;
+
+    .notification-action {
+      position: relative;
+      display: flex;
+      flex-direction: column; /* Xếp các thành phần theo chiều dọc */
+      align-items: center; /* Căn giữa các phần tử con */
+      gap: 5px; /* Khoảng cách giữa các phần tử */
+      
+
+      .notification-button {
+        border: #333;
+      }
+
+      .notification-count {
+        position: absolute;
+        top: 0px; /* Đặt số thông báo ở giữa theo chiều dọc */
+        right: -20px; /* Đặt số thông báo ở giữa theo chiều ngang (nếu cần) */
+        transform: translate(-50%, -50%); /* Căn giữa hoàn toàn */
+        background-color: #ea2b0f; /* Màu nền nổi bật */
+        color: white; /* Màu chữ */
+        border-radius: 50%; /* Hình tròn */
+        padding: 4px 8px; /* Khoảng cách bên trong */
+        font-size: 0.8rem; /* Kích thước chữ nhỏ */
+        width: 25px;
+        height: 25px;
+      }
+    }
+    .sell-action{
+      display: flex;
+      flex-direction: column; /* Xếp các thành phần theo chiều dọc */
+      align-items: center; /* Căn giữa các phần tử con */
+      gap: 5px; /* Khoảng cách giữa các phần tử */
+      .sell{
+        font-size: 0.9rem; /* Kích thước chữ */
+        color: #333; /* Màu chữ */
+      }
+    }
+    .cart-action{
+      display: flex;
+      flex-direction: column; /* Xếp các thành phần theo chiều dọc */
+      align-items: center; /* Căn giữa các phần tử con */
+      gap: 5px; /* Khoảng cách giữa các phần tử */
+      .cart-salary{
+        font-size: 0.9rem; /* Kích thước chữ */
+        color: #333; /* Màu chữ */
+      }
+    }
+    .user-action {
+      display: flex;
+      flex-direction: column; /* Xếp các thành phần theo chiều dọc */
+      align-items: center; /* Căn giữa các phần tử con */
+      gap: 5px; /* Khoảng cách giữa các phần tử */
+
+      .user-button {
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        font-size: 1.5rem; /* Tăng kích thước icon */
+      }
+
+      .user-name {
+        font-size: 0.9rem; /* Kích thước chữ */
+        color: #333; /* Màu chữ */
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column; /* Chuyển layout thành dạng cột */
+    align-items: center; /* Căn giữa các phần tử */
+  }
+
+  form {
+    width: 90%; /* Tăng độ rộng cho form */
+    margin-top: 10px;
+  }
+}

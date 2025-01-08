@@ -1,0 +1,37 @@
+.country-dropdown {
+  width: 150px;
+  height: 60px;
+  min-width: 150px;
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.2)!important;
+  border-radius: 7px;
+  .country-info{
+    margin: 0;
+    padding: 10px 10px !important;
+    text-align: left; /* Đảm bảo căn trái nội dung */
+    display: flex;
+    flex-direction: column; /* Sắp xếp `label` và `name` theo chiều dọc */
+    align-items: flex-start; /* Dịch nội dung về phía bên trái */
+    justify-content: center;
+    flex-grow: 1; /* Chiếm không gian còn lại để đẩy biểu tượng sang phải */
+    .country-info-lable{
+        font-size: 12px !important;
+        text-transform: capitalize !important;
+        color: rgba(0,0,0,0.7) !important;
+        font-family: "Outfit", sans-serif;
+        line-height: 16px;
+    }
+    .country-info-name{
+        font-size: 12px !important;
+        font-weight: 600;
+        font-family: "Outfit", sans-serif;
+        color: #233a95 !important;
+        line-height: 16px;
+    }
+     .country-icon {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.4)!important;
+  }
+  }
+  
+}
